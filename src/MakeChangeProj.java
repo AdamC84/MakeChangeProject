@@ -5,14 +5,12 @@ public class MakeChangeProj {
 	public static void main(String[] args) {
 		Scanner kb = new Scanner(System.in);
 		double tender, price;
-		int tender1, price1, change0;
 
 		System.out.println("How much is the item that you are purchasing?");
 		price = kb.nextDouble();
 		System.out.println("How much money are you paying for that item?");
 		tender = kb.nextDouble();
 		
-//		System.out.println(tender + " " + price);
 
 		if (price > tender) {
 			System.out.println("That is not enough money.");
@@ -21,7 +19,6 @@ public class MakeChangeProj {
 		}
 		double change1 = (double) tender * 100;
 		double change2 = (double) price * 100;
-//		System.out.println(change1 + " " + change2);
 		change(change1, change2);
 
 		kb.close();
@@ -29,12 +26,6 @@ public class MakeChangeProj {
 
 	public static void change(double tend, double price1) {
 		double change = (double)(tend - price1);
-//		System.out.println(change);
-//		if (change0 )
-//		System.out.println(change0);
-//		int change = (int)(change0 * 100);
-//		change++;
-//		System.out.println(change);
 
 		if (change == 10.00) {
 			System.out.println("One 10 dollar bill");
